@@ -224,7 +224,7 @@ color:#FFF;
 /*--Footer Section--*/
 .social ul li {
 	display: inline-block;
-	padding: 10px;
+	padding: 5px;
 }
 
 .social {
@@ -294,4 +294,5 @@ color:#FFF;
 		width: 100%;
 		padding: 10px 0;
 	}
+	
 }
