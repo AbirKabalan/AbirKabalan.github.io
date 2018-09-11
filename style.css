@@ -1,0 +1,297 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.body {
+	font-family: Courier New, sans-serif;
+	font-size: 18px;
+}
+
+h2 {
+	color: #000;
+    letter-spacing: 10px;
+    padding-bottom: 3px;
+}
+
+h4{
+    letter-spacing: 2px;
+	color: #000;
+}
+
+p {
+	color: #000;
+	line-height: 31px;
+}
+
+/*--Header--*/
+header {
+	background-color: #2d2d30;
+	width: 100%;
+	height: 50px;
+}
+
+#header-inner {
+	max-width: 1200px;
+	margin: 0 auto;
+	text-decoration: none;
+}
+
+#logo {
+	float: left;
+	padding: 0px 0px 0px 40px;
+	font-size: 40px;
+	font-family: Brush Script MT;
+	color: #FFFFFF;
+}
+
+a:hover#logo {
+	text-decoration: none;
+}
+	
+.navbar {
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+}
+
+.navbar ul {
+	float: right;
+}
+
+#menu-icon {
+	display: hidden;
+	width: 40px;
+	height: 40px;
+	background: url(img/nav.png) center;
+}
+
+a:hover#menu-icon {
+	border-radius: 4px 4px 0 0;
+}
+ 
+
+ul {
+	list-style-type: none;
+}
+
+nav ul li a {
+	color: #F5F5F5;
+}
+
+nav ul li {
+	font-size: 150%;
+	display: inline-block;
+	float: left;
+	padding: 10px;	
+}
+
+nav ul li a:hover {
+	color: #C3D7DF;
+	text-decoration: none;
+}
+
+.current {
+	color: #C3D7DF;
+}
+/*--End Header--*/
+
+
+
+/*--Banner Section--*/ 
+.banner {
+	width: 100%;
+	background-color: #000;
+}
+
+.banner-inner {
+	max-width: 1500px;
+	margin: 0 auto;
+}
+
+.banner-inner img { 
+      width: 100%; /* Set width to 100% */
+      margin: auto;
+}
+/*--End Banner Section--*/
+
+
+
+/*--About Section--*/
+.container {
+    padding: 80px 120px;
+}
+
+.container-fluid {
+    padding: 30px 50px 70px 50px;
+}
+
+.about-me, .project-title, .features, .skills-title{
+padding: 5px 6px 5px 30px;
+-webkit-box-shadow: -3px 7px 39px -5px rgba(0,0,0,0.38);
+-moz-box-shadow: -3px 7px 39px -5px rgba(0,0,0,0.38);
+box-shadow:-3px 7px 39px -5px rgba(0, 0, 0, 0.38);
+background-color: #BEBEBE;
+}
+
+.abt-me-desc, .project-desc {
+    padding: 30px 2px 20px 0px;
+}
+
+.about-left img {
+    border: 10px solid #000;
+}
+
+
+.data{
+color: #000;
+line-height: 31px;
+padding: 20px 4px 20px 30px;
+-webkit-box-shadow: -3px 7px 39px -5px rgba(0,0,0,0.38);
+-moz-box-shadow: -3px 7px 39px -5px rgba(0,0,0,0.38);
+box-shadow:-3px 7px 39px -5px rgba(0, 0, 0, 0.38);
+background-color: #E6E6FA;
+}
+/*--End About Section--*/
+
+
+
+/*--Education Section--*/
+#education {
+	background: url(img/edu.jpg) no-repeat;
+	background-size: 100%;
+	width: 100%;
+	max-width: 1500px;
+	margin: auto;
+	padding:55px 0px 0px 0px;
+}
+
+.edu-title {
+	width:100%;
+	margin: auto;
+}
+
+
+.edu-title h2 {
+	padding: 0px 0px 30px 10px;
+}
+.edu, .skills-subtitle {
+padding: 20px 4px 10px 30px;
+-webkit-box-shadow: -3px 7px 39px -5px rgba(0,0,0,0.38);
+-moz-box-shadow: -3px 7px 39px -5px rgba(0,0,0,0.38);
+box-shadow:-3px 7px 39px -5px rgba(0, 0, 0, 0.38);
+background-color: #5C5C5C;
+color:#FFF;
+}
+/*--End Education Section--*/
+
+
+
+/*--Skills Section--*/
+
+#skills {
+	width:100%;
+	max-width: 1500px;
+	padding: 50px 0px 0px 0px;
+}
+.skills ul li {
+	display: inline-block;
+	padding: 5px;
+}
+ .skills img{
+	 width: 70%;
+ }
+ 
+ .skills-right {
+	 padding:0px 0px 30px 70px;
+ }
+ 
+ .skills-subtitle {
+	 text-align: center;
+ }
+
+.lan span {
+	float: right; 
+ }
+/*--End Skills Section--*/
+
+
+/*--Footer Section--*/
+.social ul li {
+	display: inline-block;
+	padding: 10px;
+}
+
+.social {
+	background-color: #BEBEBE;
+	font-style: italic;
+	padding: 30px;
+}
+/**--End Footer Section--*/
+
+
+/*---Media---*/
+
+@media screen and (max-width: 768px) {
+	
+	.body h2 {
+		font-size: 100%;
+	}
+	
+	.body h3 {
+		font-size: 90%;
+	}
+	
+	.body h4 {
+		font-size: 80%;
+	}
+		
+	.body p, .body ul  {
+		font-size: 70%;
+	}
+	
+	img {
+		width:60%;
+	}
+	
+	.skills ul {
+		padding: 0px 0px 0px 50px;
+	}
+	
+	#logo {
+		float: left;
+	
+	}
+	
+	#menu-icon {
+		display: inline-block;
+		float: right;
+		margin: 5px;
+	}
+	
+	nav ul, nav:active ul {
+		display: none;
+		z-index: 1000;
+		position: absolute;
+		padding: 10px;
+		background: #696969;
+		right: 2px;
+		top: 60px;
+		width: 50%;
+	}
+	
+	nav:hover ul{
+		display: block;
+	}
+	
+	nav li {
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+	}
+}
