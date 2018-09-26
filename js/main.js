@@ -17,39 +17,27 @@ $(document).ready(function(){
 });
 
 
-$(document).ready(function(){	
-  var $text = $("#text"),
-      $submit = $("#commentform input[type='submit']"),
-      $listComment = $(".list-comments"),
-      $loading = $(".loading"),
-      _data,
-      $totalCom = $(".total-comment");
-
-  $totalCom.text($(".list-comments > div").length);
-
-  $($submit).click(function(){
-    if($text.html() == ""){
-      alert("Plesea write a comment!");
-      $text.focus();
-    } else{
-      _data = $text.html();
-	  
-      $.ajax({
-        type: "POST",
-        url: window.local,
-		dataType: 'text',
-        data: _data,
-        cache: false,
-        success: function(html){
-          $loading.show().fadeOut(300);
-          $listComment.append("<div>"+_data+"</div>");
-          $text.html("");
-          $totalCom.text($(".list-comments > div").length);
-        }
-      });
-      return false;
-    }
-  }); 
+$(document).ready(function(){
+	var $comment = $("#text"),
+	$submit = $("#commentform input[type='submit']"),
+   	$listComment = $("#list-comments"),
+    	$loading = $(".loading"),
+    	comment,
+    	$totalCom = $(".total-comment");
+	$totalCom.text($("#list-comments > div").length);
+	
+	$($submit).click(function(){
+		comment = $comment.html();
+	
+		if(comment == "") {
+			alert("Please write a comment");
+		}
+		else {
+			$loading.show().fadeOut(300);
+			$listComment.append("<div>"+comment+"</div>");
+			$totalCom.text($("#list-comments > div").length);	
+		}
+	});
 });
 
 $(document).ready(function() {
