@@ -5,11 +5,9 @@
 	border: 0;
 }
 
-html,body{
+html,body {
 overflow-x: hidden;
 }
-
-
 
 .body {
 	font-family: Courier New, sans-serif;
