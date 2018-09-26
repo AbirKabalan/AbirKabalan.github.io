@@ -274,18 +274,18 @@ input[type="submit"]{
   font-weight: bold;
 }
 
-.list-comments{
+#list-comments{
   margin-top: 30px;
   border: 1px solid #ccc;
   background: #f0f0f0;
 }
 
-.list-comments > div{
+#list-comments > div{
   padding: 10px;
   border-bottom: 1px solid #ccc;
 }
 
-.list-comments > div:last-child{
+#list-comments > div:last-child{
   border-bottom: none;
 }
 
